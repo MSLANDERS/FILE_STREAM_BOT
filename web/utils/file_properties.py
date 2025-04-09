@@ -5,9 +5,8 @@ from pyrogram.file_id import FileId
 from pyrogram.raw.types.messages import Messages
 from web.server.exceptions import FIleNotFound
 
-#Dont Remove My Credit @AV_BOTz_UPDATE 
-#This Repo Is By @BOT_OWNER26 
-# For Any Kind Of Error Ask Us In Support Group @AV_SUPPORT_GROUP
+#Dont Remove My Credit @MSLANDERS 
+# For Any Kind Of Error Ask Us In Support Group @MSLANDERS_HELP
 
 async def parse_file_id(message: "Message") -> Optional[FileId]:
     media = get_media_from_message(message)
@@ -19,9 +18,8 @@ async def parse_file_unique_id(message: "Messages") -> Optional[str]:
     if media:
         return media.file_unique_id
 
-#Dont Remove My Credit @AV_BOTz_UPDATE 
-#This Repo Is By @BOT_OWNER26 
-# For Any Kind Of Error Ask Us In Support Group @AV_SUPPORT_GROUP
+#Dont Remove My Credit @MSLANDERS 
+# For Any Kind Of Error Ask Us In Support Group @MSLANDERS_HELP
 
 async def get_file_ids(client: Client, chat_id: int, id: int) -> Optional[FileId]:
     message = await client.get_messages(chat_id, id)
@@ -52,9 +50,8 @@ def get_media_from_message(message: "Message") -> Any:
         if media:
             return media
 
-#Dont Remove My Credit @AV_BOTz_UPDATE 
-#This Repo Is By @BOT_OWNER26 
-# For Any Kind Of Error Ask Us In Support Group @AV_SUPPORT_GROUP
+#Dont Remove My Credit @MSLANDERS 
+# For Any Kind Of Error Ask Us In Support Group @MSLANDERS_HELP
 
 def get_hash(media_msg: Message) -> str:
     media = get_media_from_message(media_msg)
