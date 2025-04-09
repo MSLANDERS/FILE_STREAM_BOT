@@ -1,9 +1,8 @@
 import asyncio, logging, aiohttp, traceback
 from info import *
 
-#Dont Remove My Credit @AV_BOTz_UPDATE 
-#This Repo Is By @BOT_OWNER26 
-# For Any Kind Of Error Ask Us In Support Group @AV_SUPPORT_GROUP
+#Dont Remove My Credit @MSLANDERS 
+# For Any Kind Of Error Ask Us In Support Group @MSLANDERS_HELP
 
 class temp(object):
     ME = None
@@ -11,9 +10,8 @@ class temp(object):
     U_NAME = None
     B_NAME = None 
 
-#Dont Remove My Credit @AV_BOTz_UPDATE 
-#This Repo Is By @BOT_OWNER26 
-# For Any Kind Of Error Ask Us In Support Group @AV_SUPPORT_GROUP
+#Dont Remove My Credit @MSLANDERS 
+# For Any Kind Of Error Ask Us In Support Group @MSLANDERS_HELP
 
 async def ping_server():
     sleep_time = PING_INTERVAL
@@ -30,9 +28,8 @@ async def ping_server():
         except Exception:
             traceback.print_exc()
 
-#Dont Remove My Credit @AV_BOTz_UPDATE 
-#This Repo Is By @BOT_OWNER26 
-# For Any Kind Of Error Ask Us In Support Group @AV_SUPPORT_GROUP
+#Dont Remove My Credit @MSLANDERS 
+# For Any Kind Of Error Ask Us In Support Group @MSLANDERS_HELP
 
 def get_size(size):
     """Get size in readable format"""
@@ -45,9 +42,8 @@ def get_size(size):
         size /= 1024.0
     return "%.2f %s" % (size, units[i])
 
-#Dont Remove My Credit @AV_BOTz_UPDATE 
-#This Repo Is By @BOT_OWNER26 
-# For Any Kind Of Error Ask Us In Support Group @AV_SUPPORT_GROUP
+#Dont Remove My Credit @MSLANDERS 
+# For Any Kind Of Error Ask Us In Support Group @MSLANDERS_HELP
 
 def get_readable_time(seconds: int) -> str:
     count = 0
@@ -70,8 +66,8 @@ def get_readable_time(seconds: int) -> str:
         readable_time += time_list.pop() + ", "
     time_list.reverse()
     readable_time += ": ".join(time_list)
-    return readable_time 
+    return readable_time
 
-#Dont Remove My Credit @AV_BOTz_UPDATE 
-#This Repo Is By @BOT_OWNER26 
-# For Any Kind Of Error Ask Us In Support Group @AV_SUPPORT_GROUP
+
+#Dont Remove My Credit @MSLANDERS 
+# For Any Kind Of Error Ask Us In Support Group @MSLANDERS_HELP
