@@ -13,9 +13,8 @@ from typing import Union, Optional, AsyncGenerator
 from pyrogram import types
 from aiohttp import web
 
-#Dont Remove My Credit @AV_BOTz_UPDATE 
-#This Repo Is By @BOT_OWNER26 
-# For Any Kind Of Error Ask Us In Support Group @AV_SUPPORT_GROUP
+#Dont Remove My Credit @MSLANDERS 
+# For Any Kind Of Error Ask Us In Support Group @MSLANDERS_HELP
 
 class WebXBot(Client):
 
@@ -33,9 +32,8 @@ class WebXBot(Client):
     async def set_self(self):
         temp.BOT = self
 
-#Dont Remove My Credit @AV_BOTz_UPDATE 
-#This Repo Is By @BOT_OWNER26 
-# For Any Kind Of Error Ask Us In Support Group @AV_SUPPORT_GROUP
+#Dont Remove My Credit @MSLANDERS 
+# For Any Kind Of Error Ask Us In Support Group @MSLANDERS_HELp
     
     async def iter_messages(
         self,
@@ -58,6 +56,5 @@ Webavbot = WebXBot()
 multi_clients = {}
 work_loads = {}
 
-#Dont Remove My Credit @AV_BOTz_UPDATE 
-#This Repo Is By @BOT_OWNER26 
-# For Any Kind Of Error Ask Us In Support Group @AV_SUPPORT_GROUP
+#Dont Remove My Credit @MSLANDERS 
+# For Any Kind Of Error Ask Us In Support Group @MSLANDERS_HELP
