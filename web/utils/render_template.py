@@ -8,9 +8,8 @@ import urllib.parse
 import logging
 import aiohttp
 
-#Dont Remove My Credit @AV_BOTz_UPDATE 
-#This Repo Is By @BOT_OWNER26 
-# For Any Kind Of Error Ask Us In Support Group @AV_SUPPORT_GROUP
+#Dont Remove My Credit @MSLANDERS 
+# For Any Kind Of Error Ask Us In Support Group @MSLANDERS_HELP
 
 async def render_page(id, secure_hash, src=None):
     file = await Webavbot.get_messages(int(BIN_CHANNEL), int(id))
@@ -46,7 +45,3 @@ async def render_page(id, secure_hash, src=None):
         file_size=file_size,
         file_unique_id=file_data.unique_id,
     )
-
-#Dont Remove My Credit @AV_BOTz_UPDATE 
-#This Repo Is By @BOT_OWNER26 
-# For Any Kind Of Error Ask Us In Support Group @AV_SUPPORT_GROUP
