@@ -10,7 +10,7 @@ from database.users_db import db
 from pyrogram.errors import FloodWait
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
-#Dont Remove My Credit @MSLANDERS 
+#Dont Remove My Credit @MSLANDERS  
 # For Any Kind Of Error Ask Us In Support Group @MSLANDERS_HELP
 
 @Client.on_message(filters.channel & (filters.document | filters.video) & ~filters.forwarded, group=-1)
