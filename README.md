@@ -16,7 +16,7 @@ If you encounter any issues deploying the bot, feel free to seek assistance in o
 
   <h1 align="center"></h1>
 <p align="center"> 
-  <img src="https://i.imghippo.com/files/LTn6406ni.jpg" alt="Cover Image" width="650">
+  <img src="https://envs.sh/_pM.jpg" alt="Cover Image" width="650">
   </a>
  <p align="center">
     A Telegram bot to turn all media and documents files to instant direct download and stream link .
