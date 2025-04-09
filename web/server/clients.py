@@ -5,9 +5,8 @@ from pyrogram import Client
 from web.utils.config_parser import TokenParser
 from web.server import multi_clients, work_loads, Webavbot
 
-#Dont Remove My Credit @AV_BOTz_UPDATE 
-#This Repo Is By @BOT_OWNER26 
-# For Any Kind Of Error Ask Us In Support Group @AV_SUPPORT_GROUP
+#Dont Remove My Credit @MSLANDERS 
+# For Any Kind Of Error Ask Us In Support Group @MSLANDERS_HELP
 
 async def initialize_clients():
     multi_clients[0] = Webavbot
@@ -45,6 +44,5 @@ async def initialize_clients():
     else:
         print("No additional clients were initialized, using default client")
  
-#Dont Remove My Credit @AV_BOTz_UPDATE 
-#This Repo Is By @BOT_OWNER26 
-# For Any Kind Of Error Ask Us In Support Group @AV_SUPPORT_GROUP
+#Dont Remove My Credit @MSLANDERS 
+# For Any Kind Of Error Ask Us In Support Group @MSLANDERS_HELP
