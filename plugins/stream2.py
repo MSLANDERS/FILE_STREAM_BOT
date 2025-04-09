@@ -10,10 +10,9 @@ from database.users_db import db
 from pyrogram.errors import FloodWait
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
-#Dont Remove My Credit @AV_BOTz_UPDATE 
-#This Repo Is By @BOT_OWNER26 
-# For Any Kind Of Error Ask Us In Support Group @AV_SUPPORT_GROUP
-    
+#Dont Remove My Credit @MSLANDERS 
+# For Any Kind Of Error Ask Us In Support Group @MSLANDERS_HELP
+
 @Client.on_message(filters.channel & (filters.document | filters.video) & ~filters.forwarded, group=-1)
 async def channel_receive_handler(bot: Client, broadcast: Message):
     if int(broadcast.chat.id) in BAN_CHNL:
@@ -73,6 +72,5 @@ async def channel_receive_handler(bot: Client, broadcast: Message):
         await bot.send_message(chat_id=BIN_CHANNEL, text=f"❌ **Error:** `{e}`", disable_web_page_preview=True)
         print(f"❌ Can't edit channel message! Error: {e}")
 
-#Dont Remove My Credit @AV_BOTz_UPDATE 
-#This Repo Is By @BOT_OWNER26 
-# For Any Kind Of Error Ask Us In Support Group @AV_SUPPORT_GROUP
+#dont Remove My Credit @MSLANDERS 
+# For Any Kind Of Error Ask Us In Support Group @MSLANDERS_HELP
