@@ -2,9 +2,8 @@ import os, sys, glob, pytz, asyncio, logging, importlib
 from pathlib import Path
 from pyrogram import idle
 
-#Dont Remove My Credit @AV_BOTz_UPDATE 
-#This Repo Is By @BOT_OWNER26 
-# For Any Kind Of Error Ask Us In Support Group @AV_SUPPORT_GROUP
+#Dont Remove My Credit @MSLANDERS 
+# For Any Kind Of Error Ask Us In Support Group @MSLANDERS_HELP
 
 logging.basicConfig(
     level=logging.INFO,
@@ -20,23 +19,22 @@ from Script import script
 from datetime import date, datetime 
 from aiohttp import web
 from web import web_server
-from web.server import Webavbot
+from web.server import Webmslandersbot
 from utils import temp, ping_server
 from web.server.clients import initialize_clients
 
-#Dont Remove My Credit @AV_BOTz_UPDATE 
-#This Repo Is By @BOT_OWNER26 
-# For Any Kind Of Error Ask Us In Support Group @AV_SUPPORT_GROUP
+#Dont Remove My Credit @MSLANDERS 
+# For Any Kind Of Error Ask Us In Support Group @MSLANDERS_HELP
 
 ppath = "plugins/*.py"
 files = glob.glob(ppath)
-Webavbot.start()
+Webmslandersbot.start()
 loop = asyncio.get_event_loop()
 
 async def start():
     print('\n')
     print('Initalizing Your Bot')
-    bot_info = await Webavbot.get_me()
+    bot_info = await Webmslandersbot.get_me()
     await initialize_clients()
     for name in files:
         with open(name) as a:
@@ -50,14 +48,13 @@ async def start():
             sys.modules["plugins." + plugin_name] = load
             print("Imported => " + plugin_name)
 
-#Dont Remove My Credit @AV_BOTz_UPDATE 
-#This Repo Is By @BOT_OWNER26 
-# For Any Kind Of Error Ask Us In Support Group @AV_SUPPORT_GROUP
+#dont Remove My Credit @MSLANDERS 
+# For Any Kind Of Error Ask Us In Support Group @MSLANDERS_HELP
     
     if ON_HEROKU:
         asyncio.create_task(ping_server())
-    me = await Webavbot.get_me()
-    temp.BOT = Webavbot
+    me = await Webmslandersbot.get_me()
+    temp.BOT = Webmslandersbot
     temp.ME = me.id
     temp.U_NAME = me.username
     temp.B_NAME = me.first_name
@@ -65,17 +62,16 @@ async def start():
     today = date.today()
     now = datetime.now(tz)
     time = now.strftime("%H:%M:%S %p")
-    await Webavbot.send_message(LOG_CHANNEL, text=script.RESTART_TXT.format(today, time))
-    await Webavbot.send_message(ADMINS[0], text='<b>ʙᴏᴛ ʀᴇsᴛᴀʀᴛᴇᴅ !!</b>')
+    await Webmslandersbot.send_message(LOG_CHANNEL, text=script.RESTART_TXT.format(today, time))
+    await Webmslandersbot.send_message(ADMINS[0], text='<b>ʙᴏᴛ ʀᴇsᴛᴀʀᴛᴇᴅ !!</b>')
     app = web.AppRunner(await web_server())
     await app.setup()
     bind_address = "0.0.0.0"
     await web.TCPSite(app, bind_address, PORT).start()
     await idle()
 
-#Dont Remove My Credit @AV_BOTz_UPDATE 
-#This Repo Is By @BOT_OWNER26 
-# For Any Kind Of Error Ask Us In Support Group @AV_SUPPORT_GROUP
+#Dont Remove My Credit @MSLANDERS 
+# For Any Kind Of Error Ask Us In Support Group @MSLANDERS_HELP
 
 if __name__ == '__main__':
     try:
