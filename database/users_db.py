@@ -56,7 +56,7 @@ class Database:
             else:
                 return False
         except Exception as e:
-            e = f'Fᴀɪʟᴇᴅ ᴛᴏ ᴜɴʙᴀɴ.Rᴇᴀsᴏɴ : {e}'
+            e = f'Fᴀɪʟᴇᴅ Tᴏ Uɴʙᴀɴ.Rᴇᴀsᴏɴ : {e}'
             print(e)
             return e
         
