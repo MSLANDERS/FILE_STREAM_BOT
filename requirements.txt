@@ -1,0 +1,16 @@
+pyrofork==2.3.48
+tgcrypto
+aiohttp
+python-dotenv<=0.20.0
+motor
+aiofiles
+dnspython
+apscheduler
+requests
+psutil
+jinja2
+pytz
+
+#Dont Remove My Credit @AV_BOTz_UPDATE 
+#This Repo Is By @BOT_OWNER26 
+# For Any Kind Of Error Ask Us In Support Group @AV_SUPPORT_GROUP
