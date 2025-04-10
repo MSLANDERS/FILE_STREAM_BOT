@@ -11,11 +11,11 @@ SESSION = environ.get('SESSION', 'Webmslandersbot')  #Don't change it
 API_ID = int(environ.get('API_ID', ''))
 API_HASH = environ.get('API_HASH', '')
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
-BOT_USERNAME = environ.get("BOT_USERNAME", '') # without @ 
+BOT_USERNAME = environ.get("BOT_USERNAME", 'FilesToLinkPro_bot') # without @ 
 
 # Admins, Channels & Users
-BIN_CHANNEL = int(environ.get("BIN_CHANNEL", '-100')) # admin your channel in stream 
-LOG_CHANNEL = int(environ.get("LOG_CHANNEL", '-100')) # admin your channel in users log 
+BIN_CHANNEL = int(environ.get("BIN_CHANNEL", '-1002456017788')) # admin your channel in stream 
+LOG_CHANNEL = int(environ.get("LOG_CHANNEL", '-1002421781174')) # admin your channel in users log 
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6317211079').split()] # 3567788, 678899, 5889467
 OWNER_USERNAME = environ.get("OWNER_USERNAME", 'AMANI_JII') # without @ 
 
@@ -48,8 +48,8 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 
 # fsub  information
 AUTH_PICS = environ.get('AUTH_PICS', 'https://i.imghippo.com/files/oUyy1541rKc.jpg')              
-AUTH_CHANNEL = (environ.get("AUTH_CHANNEL", "-100"))
-FSUB = environ.get("FSUB", False)
+AUTH_CHANNEL = (environ.get("AUTH_CHANNEL", "-1002178835257"))
+FSUB = environ.get("FSUB", True)
 
 # port information
 PORT = int(getenv('PORT', '2626'))
@@ -78,7 +78,7 @@ HAS_SSL=bool(getenv('HAS_SSL',False))
 if HAS_SSL:
     URL = "https://{}/".format(FQDN)
 else:
-    URL = "http://{}{}/".format(FQDN, "" if NO_PORT else ":" + str(PORT))
+    URL = "https://{}/".format(FQDN, "" if NO_PORT else ":" + str(PORT))
       
 #Dont Remove My Credit @MSLANDERS 
 # For Any Kind Of Error Ask Us In Support Group @MSLANDERS_HELP
