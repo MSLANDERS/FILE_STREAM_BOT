@@ -72,7 +72,7 @@
         },
         "SESSION": {
             "description": ".....",
-            "value": "Webavbot",
+            "value": "Webmslandersbot",
             "required": false
         },
         "AUTH_CHANNEL": {
@@ -134,7 +134,7 @@
             
         },
         "PICS": {
-            "description": "Your Bot start cmd Pic from @AV_IMA_TO_URL_BOT",
+            "description": "Your Bot start cmd Pic from @SaitamaAutoFilterBot",
             "value": "https://envs.sh/b6H.jpg",
             "required": false
         }
