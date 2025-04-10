@@ -51,7 +51,7 @@ class WebXBot(Client):
                 yield message
                 current += 1
       
-Webavbot = WebXBot()
+Webmslandersbot = WebXBot()
 
 multi_clients = {}
 work_loads = {}
