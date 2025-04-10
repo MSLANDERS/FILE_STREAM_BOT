@@ -40,12 +40,12 @@ async def channel_receive_handler(bot: Client, broadcast: Message):
             )
             
         # कैप्शन अपडेट करें
-        new_caption = f"<i><a href='{CHANNEL}'>{file_name}</a></i>"
+       # new_caption = f"<i><a href='{CHANNEL}'>{file_name}</a></i>"
 
         # बटन बनाएं
         buttons = InlineKeyboardMarkup([
-            [InlineKeyboardButton(" sᴛʀᴇᴀᴍ ", url=stream),
-             InlineKeyboardButton("Dᴏᴡɴʟᴏᴀᴅ", url=download)]
+            [InlineKeyboardButton(" STREAM 🖥 ", url=stream),
+             InlineKeyboardButton("DOWNLOAD 📥", url=download)]
         ])
 
         # चैनल मैसेज का कैप्शन और बटन अपडेट करें
