@@ -27,7 +27,7 @@ async def render_page(id, secure_hash, src=None):
     tag = file_data.mime_type.split("/")[0].strip()
     file_size = get_size(file_data.file_size)
     if tag in ["video", "audio"]:
-        template_file = "web/template/webav.html"
+        template_file = "web/template/webmslanders.html"
     else:
         template_file = "web/template/dl.html"
         async with aiohttp.ClientSession() as s:
