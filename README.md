@@ -123,6 +123,7 @@ python3 bot.py
 ### CONTACT DEVELOPER
 
 - [AMANI](https://telegram.me/MSLANDERSTALK_BOT)
+- [𝙰𝙼𝙰𝙽 𝚅𝙸𝚂𝙷𝚆𝙰𝙺𝙰𝚁𝙼𝙰](https://telegram.me/BOT_OWNER26)
 
 ### 📌 NOTE
 
