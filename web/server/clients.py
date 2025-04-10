@@ -3,13 +3,13 @@ import logging
 from info import *
 from pyrogram import Client
 from web.utils.config_parser import TokenParser
-from web.server import multi_clients, work_loads, Webavbot
+from web.server import multi_clients, work_loads, Webmslandersbot
 
 #Dont Remove My Credit @MSLANDERS 
 # For Any Kind Of Error Ask Us In Support Group @MSLANDERS_HELP
 
 async def initialize_clients():
-    multi_clients[0] = Webavbot
+    multi_clients[0] = Webmslandersbot
     work_loads[0] = 0
     all_tokens = TokenParser().parse_from_env()
     if not all_tokens:
