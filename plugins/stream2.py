@@ -33,7 +33,6 @@ async def channel_receive_handler(bot: Client, broadcast: Message):
         # Stream & Download लिंक बनाए
         stream = f"{URL}watch/{msg.id}?hash={get_hash(msg)}"
         download = f"{URL}{msg.id}?hash={get_hash(msg)}"
-        file_link = f"https://t.me/{BOT_USERNAME}?start=file_{msg.id}"
             
         await msg.reply_text(
             text=f"**Channel Name:** `{broadcast.chat.title}`\n**CHANNEL ID:** `{broadcast.chat.id}`\n**Rᴇǫᴜᴇsᴛ ᴜʀʟ:** {stream}",
@@ -45,9 +44,8 @@ async def channel_receive_handler(bot: Client, broadcast: Message):
 
         # बटन बनाएं
         buttons = InlineKeyboardMarkup([
-            [InlineKeyboardButton(" Stream", url=stream),
-             InlineKeyboardButton("Download", url=download)],
-            [InlineKeyboardButton('Get File', url=file_link)]
+            [InlineKeyboardButton(" sᴛʀᴇᴀᴍ ", url=stream),
+             InlineKeyboardButton("Dᴏᴡɴʟᴏᴀᴅ", url=download)]
         ])
 
         # चैनल मैसेज का कैप्शन और बटन अपडेट करें
