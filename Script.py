@@ -18,7 +18,7 @@ Add me to your channel to instantly generate links for any downloadable media. O
     
     ADMIN_CMD_TXT = """<b>
     
-Olay aman vishwakarma ne add Kiya hai 
+ADMIN KI JAI HO 😎
 
 /broadcast send massage users 
 /users To get users details
