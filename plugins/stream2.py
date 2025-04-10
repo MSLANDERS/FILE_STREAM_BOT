@@ -3,7 +3,7 @@ import os
 import random
 from web.utils.file_properties import get_hash
 from pyrogram import Client, filters, enums
-from info import BIN_CHANNEL, BAN_CHNL, BANNED_CHANNELS, URL, CHANNEL, BOT_USERNAME
+from info import BIN_CHANNEL, BAN_CHNL, BANNED_CHANNELS, URL, BOT_USERNAME
 from utils import get_size
 from Script import script
 from database.users_db import db
@@ -38,23 +38,18 @@ async def channel_receive_handler(bot: Client, broadcast: Message):
             text=f"**Channel Name:** `{broadcast.chat.title}`\n**CHANNEL ID:** `{broadcast.chat.id}`\n**Rᴇǫᴜᴇsᴛ ᴜʀʟ:** {stream}",
             quote=True
             )
-            
-        # कैप्शन अपडेट करें
-       # new_caption = f"<i><a href='{CHANNEL}'>{file_name}</a></i>"
-
+               
         # बटन बनाएं
         buttons = InlineKeyboardMarkup([
             [InlineKeyboardButton(" STREAM 🖥 ", url=stream),
              InlineKeyboardButton("DOWNLOAD 📥", url=download)]
         ])
 
-        # चैनल मैसेज का कैप्शन और बटन अपडेट करें
-        await bot.edit_message_caption(
+          #बटन अपडेट करें
+        await bot.edit_message_reply_markup(
             chat_id=broadcast.chat.id,
             message_id=broadcast.id,
-            caption=new_caption,
-            reply_markup=buttons,
-            parse_mode=enums.ParseMode.HTML
+            reply_markup=buttons
         )
 
     except asyncio.exceptions.TimeoutError:
