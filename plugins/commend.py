@@ -23,13 +23,11 @@ async def start(client, message):
             return
     if len(message.command) != 2 or (len(message.command) == 2 and message.command[1] == "start"):
         buttons = [[
-            InlineKeyboardButton('• ᴜᴘᴅᴀᴛᴇᴅ •', url=CHANNEL),
-	    InlineKeyboardButton('• sᴜᴘᴘᴏʀᴛ •', url=SUPPORT)
+            InlineKeyboardButton('📢 Uᴘᴅᴀᴛᴇᴅ', url=CHANNEL),
+	    InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ 👨🏻‍💻', url=SUPPORT)
         ],[
-            InlineKeyboardButton('• ʜᴇʟᴘ •', callback_data='help'),
-            InlineKeyboardButton('• ᴀʙᴏᴜᴛ •', callback_data='about')
-        ],[
- 	    InlineKeyboardButton('♻️ ᴅᴇᴠᴇʟᴏᴘᴇʀ ♻️', url=f"https://t.me/{OWNER_USERNAME}")
+            InlineKeyboardButton('Hᴇʟᴘ ⚙️', callback_data='help'),
+            InlineKeyboardButton('Aʙᴏᴜᴛ 💌', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -53,10 +51,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.delete()
     elif query.data == "about":
         buttons = [[
-	    InlineKeyboardButton('💻 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ', url='https://github.com/MSLANDERS/FILE_STREAM_BOT.git')
+	    InlineKeyboardButton('Sᴏᴜʀᴄᴇ Cᴏᴅᴇ 💻', url='https://github.com/MSLANDERS/FILE_STREAM_BOT.git'),
+	    InlineKeyboardButton('Dᴇᴠᴇʟᴏᴘᴇʀ 😎', url=f"https://t.me/{OWNER_USERNAME}")
 	],[
-            InlineKeyboardButton('• ʜᴏᴍᴇ •', callback_data='start'),
-	    InlineKeyboardButton('• ᴄʟᴏsᴇ •', callback_data='close_data')
+            InlineKeyboardButton('Hᴏᴍᴇ 🪔', callback_data='start'),
+	    InlineKeyboardButton('Cʟᴏsᴇ ⛔', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         me2 = (await client.get_me()).mention
@@ -68,13 +67,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('• ᴜᴘᴅᴀᴛᴇᴅ •', url=CHANNEL),
-	    InlineKeyboardButton('• sᴜᴘᴘᴏʀᴛ •', url=SUPPORT)
+            InlineKeyboardButton('📢 Uᴘᴅᴀᴛᴇᴅ', url=CHANNEL),
+	    InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ 👨🏻‍💻', url=SUPPORT)
         ],[
-            InlineKeyboardButton('• ʜᴇʟᴘ •', callback_data='help'),
-            InlineKeyboardButton('• ᴀʙᴏᴜᴛ •', callback_data='about')
-        ],[
- 	    InlineKeyboardButton('♻️ ᴅᴇᴠᴇʟᴏᴘᴇʀ ♻️', url=f"https://t.me/{OWNER_USERNAME}")
+            InlineKeyboardButton('Hᴇʟᴘ ⚙️', callback_data='help'),
+            InlineKeyboardButton('Aʙᴏᴜᴛ 💌', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -83,16 +80,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
 
-#Dont Remove My Credit @AV_BOTz_UPDATE 
-#This Repo Is By @BOT_OWNER26 
-# For Any Kind Of Error Ask Us In Support Group @AV_SUPPORT_GROUP
+#Dont Remove My Credit @MSLANDERS 
+# For Any Kind Of Error Ask Us In Support Group @MSLANDERS_HELP
 	
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('• ᴀᴅᴍɪɴ •', callback_data='admincmd')
+            InlineKeyboardButton('Aᴅᴍɪɴ 🔓', callback_data='admincmd')
 	],[
-	    InlineKeyboardButton('• ʜᴏᴍᴇ •', callback_data='start'),
-	    InlineKeyboardButton('• ᴄʟᴏsᴇ •', callback_data='close_data')
+	    InlineKeyboardButton('Hᴏᴍᴇ 🪔', callback_data='start'),
+	    InlineKeyboardButton('Cʟᴏsᴇ ⛔', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -106,7 +102,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if not query.from_user.id in ADMINS:
             return await query.answer('This Feature Is Only For Admins !' , show_alert=True)
         buttons = [[
-            InlineKeyboardButton('• ʜᴏᴍᴇ •', callback_data='start')
+            InlineKeyboardButton('Hᴏᴍᴇ 🪔', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -147,12 +143,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
             except Exception as e:
                 await query.message.edit(f"<b>sʀʏ ɪ ɢᴏᴛ ᴛʜɪs ᴇʀʀᴏʀ : {e}</b>")
         else:
-            await query.message.edit(f"<b>Tʜᴇ ᴘʀᴏᴄᴇss ᴡᴀs ɴᴏᴛ ᴄᴏᴍᴘʟᴇᴛᴇᴅ ʙᴇᴄᴀᴜsᴇ ᴛʜᴇ ᴜsᴇʀ ɪᴅ ᴡᴀs ɴᴏᴛ ᴠᴀʟɪᴅ, ᴏʀ ᴘᴇʀʜᴀᴘs ɪᴛ ᴡᴀs ᴀ ᴄʜᴀɴɴᴇʟ ɪᴅ</b>")
+            await query.message.edit(f"<b>Tʜᴇ Pʀᴏᴄᴇss Wᴀs Nᴏᴛ Cᴏᴍᴘʟᴇᴛᴇᴅ Bᴇᴄᴀᴜsᴇ Tʜᴇ Usᴇʀ Iᴅ Wᴀs Nᴏᴛ Vᴀʟɪᴅ, Oʀ Pᴇʀʜᴀᴘs Iᴛ Wᴀs ᴀ Cʜᴀɴɴᴇʟ Iᴅ</b>")
             
     elif query.data.startswith('NoUnbanAlert'):
         user_id =(query.data.split("_")[1])
         user_id = int(user_id.replace(' ' , ''))
-        await query.message.edit(f"Tʜᴇ ᴜɴʙᴀɴ ᴏɴ <code>{user_id}</code> ᴡᴀs ᴇxᴇᴄᴜᴛᴇᴅ sɪʟᴇɴᴛʟʏ.")
+        await query.message.edit(f"Tʜᴇ Uɴʙᴀɴ Oɴ <code>{user_id}</code> Wᴀs Exᴇᴄᴜᴛᴇᴅ Sɪʟᴇɴᴛʟʏ.")
 
 #Dont Remove My Credit @MSLANDERS 
 # For Any Kind Of Error Ask Us In Support Group @MSLANDERS_HELP
@@ -160,7 +156,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 @Client.on_message(filters.command("help"))
 async def help(client, message):
     btn = [[
-       InlineKeyboardButton('• ᴄʟᴏsᴇ •', callback_data='close_data')
+       InlineKeyboardButton('Cʟᴏsᴇ ⛔', callback_data='close_data')
     ]]
     reply_markup = InlineKeyboardMarkup(btn)
     await message.reply_text(
@@ -175,7 +171,7 @@ async def help(client, message):
 @Client.on_message(filters.command("about"))
 async def about(client, message):
     buttons = [[
-       InlineKeyboardButton('• ᴄʟᴏsᴇ •', callback_data='close_data')
+       InlineKeyboardButton('Cʟᴏsᴇ ⛔', callback_data='close_data')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     me2 = (await client.get_me()).mention
