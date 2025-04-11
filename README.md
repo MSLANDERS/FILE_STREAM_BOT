@@ -68,8 +68,6 @@ restart - To restart the bot [FOR ADMINS USE ONLY]
 ```
 </details>
 
-### ALL DEPLOYMENT METHODS
-
 ### DEPLOY ON KOYRB
 
 <p><br>                 
@@ -91,7 +89,6 @@ pip3 install -U -r requirements.txt
 Edit info.py with variables as given below then run bot
 python3 bot.py
 ```
-</details>
 
 ### ALL FEATURES
 
@@ -122,7 +119,7 @@ python3 bot.py
 
 ### MY DEVELOPERS
 
-- [AMANI](https://telegram.me/MSLANDERSTALK_BOT)
+- [AMANI](https://telegram.me/AMANI_JII)
 - [𝙰𝙼𝙰𝙽 𝚅𝙸𝚂𝙷𝚆𝙰𝙺𝙰𝚁𝙼𝙰](https://telegram.me/BOT_OWNER26)
 
 ### 📌 NOTE
