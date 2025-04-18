@@ -51,9 +51,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.delete()
     elif query.data == "about":
         buttons = [[
-	    InlineKeyboardButton('Sᴏᴜʀᴄᴇ Cᴏᴅᴇ 💻', url='https://github.com/MSLANDERS/FILE_STREAM_BOT.git'),
-	    InlineKeyboardButton('Dᴇᴠᴇʟᴏᴘᴇʀ 😎', url=f"https://t.me/{OWNER_USERNAME}")
-	],[
             InlineKeyboardButton('Hᴏᴍᴇ 🪔', callback_data='start'),
 	    InlineKeyboardButton('Cʟᴏsᴇ ⛔', callback_data='close_data')
         ]]
